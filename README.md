@@ -32,10 +32,13 @@ Contains various minimization methods in 7 Wolfram Mathematica packages:
     * Rosenbrock method
     * Powell method
 
-* Package 7
+* Package 7 (various simplex methods)
+    * Regular simplex method
+    * Downhill simplex method (Nelder\[Dash]Mead method)
+
 * Package 8
 
-## Package 1 examples
+## Package 1 (variations of 1-dimensional dichotomy) examples
 
 Minimization of a single argument function on a given interval. Both methods have exponential convergence.
 
@@ -43,9 +46,9 @@ Minimization of a single argument function on a given interval. Both methods hav
 
 <img src="images/package1_dichotomy.png" width=40% height=40%>
 
-## Package 2 examples
+## Package 2 (variations of gradient descent) examples
 
-* Require gradient to be present and computable
+* Requires gradient to be present and computable
 
 Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases steepest descent method.
 
@@ -55,12 +58,12 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package2_contours.png" width=40% height=40%>
 
-## Package 3 examples
+## Package 3 (variations of nonlinear conjugate gradient method) examples
 
-* Require gradient to be present and computable
+* Requires gradient to be present and computable
 * Conjugate gradient methods can follow narrow (ill-conditioned) valleys, where the steepest descent method slows down and follows a criss-cross pattern
 
-Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases nonlinear conjugate gradient method with Hessian matrix.
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. Following example showcases nonlinear conjugate gradient method with Hessian matrix.
 
 <img src="images/package3_functionPlot.png" width=40% height=40%>
 
@@ -69,12 +72,12 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 <img src="images/package3_contours.png" width=40% height=40%>
 
 
-## Package 4 examples
+## Package 4 (variations of Newton's method) examples
 
 * Requires Hessian to be present and computable
 * Newton's method can minimize any polynomial of Nth order in N-1 steps
 
-Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases modified Newton's method with step reduction.
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. Following example showcases modified Newton's method with step reduction.
 
 <img src="images/package4_functionPlot.png" width=40% height=40%>
 
@@ -82,11 +85,11 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package4_contours.png" width=40% height=40%>
 
-## Package 5 examples
+## Package 5 (Quasi-Newton methods) examples
 
 * Quasi-Newton methods (except McCormick) keep most properties of a regular Newton's method without requiring Hessian computation
 
-Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases Powell method. 
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. Following example showcases Powell method. 
 
 <img src="images/package5_functionPlot.png" width=40% height=40%>
 
@@ -94,11 +97,11 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package5_contours.png" width=40% height=40%>
 
-## Package 6 examples
+## Package 6 (various direct search methods) examples
 
-* Direct search methods do not require a gradient, thus can be used with non-continuous and non-differentiable functions.
+* Direct search methods do not require a gradient, thus can be used with non-continuous and non-differentiable functions
 
-Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases cyclic coordinate descent.
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. Following example showcases cyclic coordinate descent.
 
 <img src="images/package6_functionPlot.png" width=40% height=40%>
 
@@ -106,19 +109,34 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package6_contours.png" width=40% height=40%>
 
-## Package 7 examples
+## Package 7 (various simplex methods) examples
+
+* Simplex methods do not require a gradient, thus can be used with non-continuous and non-differentiable functions
+
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. Following example showcases Nelder-Mead method.
+
+<img src="images/package7_functionPlot.png" width=40% height=40%>
+
+<img src="images/package7_residual.png" width=40% height=40%>
+
+<img src="images/package7_contours.png" width=40% height=40%>
+
 ## Package 8 examples
 
 
 
 ## Usage
 
+Config parameters at the top of each package to select function, method, precision, starting point, boundarier and etc. Minimization can be tracked real-time and most consequent plots support dynamics.
 
 ## Requirements
 
 To launch Mathematica packages one may need a valid Wolfram Mathematica license. As an alternative packages can be converted to Jypiter notebooks and executed with Wolfram Lang.
 
 ## Version History
+
+* 00.06
+    * Translated package 7, converted notebook to Mathematica package
 
 * 00.05
     * Translated package 6, converted notebook to Mathematica package

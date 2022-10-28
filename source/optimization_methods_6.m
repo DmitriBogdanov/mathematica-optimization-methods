@@ -204,7 +204,7 @@
 (*];*)
 (*];*)
 (**)
-(*(* (* Launch selected method *) *)*)
+(*(* Launch selected method *)*)
 (*If[method==1,MethodCyclCoordDescent];*)
 (*If[method==2,MethodHookeJeeves];*)
 (*If[method==3,MethodRosenbrock];*)
@@ -253,3 +253,6 @@
 (*Dynamic@Row@{"Zoom: ",zoom},*)
 (*Slider[Dynamic@zoom,{1,20,0.01}]*)
 (*}*)
+
+
+
