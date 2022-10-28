@@ -3,8 +3,8 @@
 Contains various minimization methods in 7 Wolfram Mathematica packages:
 
 * Package 1 (variations of 1-dimensional dichotomy)
-    1. Dichotomy method
-    2. Golden-section search
+    1) Dichotomy method
+    2) Golden-section search
 
 * Package 2 (variations of gradient descent)
     1. Steepest descent
