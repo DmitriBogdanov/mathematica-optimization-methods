@@ -2,21 +2,21 @@
 
 Contains various minimization methods in 7 Wolfram Mathematica packages:
 
-* Package 1 (variations of 1-dimensional dichotomy)
+* Package 1 (1-dimensional dichotomy)
     * Dichotomy method
     * Golden-section search
 
-* Package 2 (variations of gradient descent)
+* Package 2 (gradient descent methods)
     * Steepest descent
     * Gradient descent with geometric step reduction
 
-* Package 3 (variations of nonlinear conjugate gradient method)
+* Package 3 (nonlinear conjugate gradient methods)
     * Nonlinear conjugate gradient method
     * Fletcher-Reeves method
     * Polak-Ribière method
     * Nonlinear conjugate gradient method with Hessian matrix
 
-* Package 4 (variations of Newton's method)
+* Package 4 (Newton's methods)
     * Newton's method
     * Modified Newton's method with step reduction
 
@@ -26,19 +26,21 @@ Contains various minimization methods in 7 Wolfram Mathematica packages:
     * Powell method
     * McCormick method
 
-* Package 6 (various direct search methods)
+* Package 6 (direct search methods)
     * Cyclic coordinate descent
     * Pattern search (Hooke - Jeeves method)
     * Rosenbrock method
     * Powell method
 
-* Package 7 (various simplex methods)
+* Package 7 (simplex methods)
     * Regular simplex method
     * Downhill simplex method (Nelder\[Dash]Mead method)
 
-* Package 8
+* Package 8 (barrier methods)
+    * Interior penalty function method
+    * Exterior penalty function method
 
-## Package 1 (variations of 1-dimensional dichotomy) examples
+## Package 1 (1-dimensional dichotomy) examples
 
 Minimization of a single argument function on a given interval. Both methods have exponential convergence.
 
@@ -46,7 +48,7 @@ Minimization of a single argument function on a given interval. Both methods hav
 
 <img src="images/package1_dichotomy.png" width=40% height=40%>
 
-## Package 2 (variations of gradient descent) examples
+## Package 2 (gradient descent methods) examples
 
 * Requires gradient to be present and computable
 
@@ -58,7 +60,7 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package2_contours.png" width=40% height=40%>
 
-## Package 3 (variations of nonlinear conjugate gradient method) examples
+## Package 3 (nonlinear conjugate gradient methods) examples
 
 * Requires gradient to be present and computable
 * Conjugate gradient methods can follow narrow (ill-conditioned) valleys, where the steepest descent method slows down and follows a criss-cross pattern
@@ -72,7 +74,7 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 <img src="images/package3_contours.png" width=40% height=40%>
 
 
-## Package 4 (variations of Newton's method) examples
+## Package 4 (Newton's methods) examples
 
 * Requires Hessian to be present and computable
 * Newton's method can minimize any polynomial of Nth order in N-1 steps
@@ -97,7 +99,7 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package5_contours.png" width=40% height=40%>
 
-## Package 6 (various direct search methods) examples
+## Package 6 (direct search methods) examples
 
 * Direct search methods do not require a gradient, thus can be used with non-continuous and non-differentiable functions
 
@@ -109,7 +111,7 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package6_contours.png" width=40% height=40%>
 
-## Package 7 (various simplex methods) examples
+## Package 7 (simplex methods) examples
 
 * Simplex methods do not require a gradient, thus can be used with non-continuous and non-differentiable functions
 
@@ -121,9 +123,32 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 <img src="images/package7_contours.png" width=40% height=40%>
 
-## Package 8 examples
+## Package 8 (barrier methods) examples
 
+* Barrier methods use penalty functions to restrict minimization to a given region g(x, y) < 0
+* Through generally reliable, a large step enough can overshoot the barrier, which leads to a longer convergence
 
+Minimization of a 2-argument function from a given initial point restricted to a region. Rosenbrock function is used for testing. Following example showcases exterior barrier method.
+
+<img src="images/package8_functionPlot.png" width=40% height=40%>
+
+<img src="images/package8_exteriror_residual.png" width=40% height=40%>
+
+<img src="images/package8_exteriror_contours1.png" width=40% height=40%>
+
+<img src="images/package8_exteriror_contours2.png" width=40% height=40%>
+
+<img src="images/package8_exteriror_penaltyPlot.png" width=40% height=40%>
+
+The same problem with interior barriers:
+
+<img src="images/package8_interiror_residual.png" width=40% height=40%>
+
+<img src="images/package8_interiror_contours1.png" width=40% height=40%>
+
+<img src="images/package8_interiror_contours2.png" width=40% height=40%>
+
+<img src="images/package8_interiror_penaltyPlot.png" width=40% height=40%>
 
 ## Usage
 
@@ -134,6 +159,10 @@ Config parameters at the top of each package to select function, method, precisi
 To launch Mathematica packages one may need a valid Wolfram Mathematica license. As an alternative packages can be converted to Jypiter notebooks and executed with Wolfram Lang.
 
 ## Version History
+
+* 01.01
+    * Translated package 8, converted notebook to Mathematica package
+    * Final touches to docs and comments
 
 * 00.06
     * Translated package 7, converted notebook to Mathematica package

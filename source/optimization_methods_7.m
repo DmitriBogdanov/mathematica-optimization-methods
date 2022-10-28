@@ -151,7 +151,7 @@
 (*X=Append[Take[X,n],XNext]*)
 (*];*)
 (*];*)
-(*(**)*)
+(*(* Save coords *)*)
 (*If[sortFVal[[-2]]>= FNext>= sortFVal[[1]],*)
 (*X=Append[Take[X,n],XNext]*)
 (*];*)
