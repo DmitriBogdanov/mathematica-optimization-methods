@@ -11,6 +11,11 @@ Contains various minimization methods in 7 Wolfram Mathematica packages:
     * Gradient descent with geometric step reduction
 
 * Package 3
+    * Nonlinear conjugate gradient method
+    * Fletcher-Reeves method
+    * Polak-Ribière method
+    * Nonlinear conjugate gradient method with Hessian matrix
+
 * Package 4
 * Package 5
 * Package 6
@@ -25,7 +30,7 @@ Minimization of a single argument function on a given interval. Both methods hav
 <img src="images/package1_dichotomy.png" width=40% height=40%>
 
 ## Package 2 examples
-Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics.
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases steepest descent method.
 
 <img src="images/package2_functionPlot.png" width=40% height=40%>
 
@@ -34,6 +39,15 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 <img src="images/package2_contours.png" width=40% height=40%>
 
 ## Package 3 examples
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases nonlinear conjugate gradient method with Hessian matrix.
+
+<img src="images/package3_functionPlot.png" width=40% height=40%>
+
+<img src="images/package3_residual.png" width=40% height=40%>
+
+<img src="images/package3_contours.png" width=40% height=40%>
+
+
 ## Package 4 examples
 ## Package 5 examples
 ## Package 6 examples
