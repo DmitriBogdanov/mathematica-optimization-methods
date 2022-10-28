@@ -26,11 +26,17 @@ Contains various minimization methods in 7 Wolfram Mathematica packages:
     * Powell method
     * McCormick method
 
-* Package 6
+* Package 6 (various direct search methods)
+    * Cyclic coordinate descent
+    * Pattern search (Hooke - Jeeves method)
+    * Rosenbrock method
+    * Powell method
+
 * Package 7
 * Package 8
 
 ## Package 1 examples
+
 Minimization of a single argument function on a given interval. Both methods have exponential convergence.
 
 <img src="images/package1_functionPlot.png" width=40% height=40%>
@@ -38,6 +44,9 @@ Minimization of a single argument function on a given interval. Both methods hav
 <img src="images/package1_dichotomy.png" width=40% height=40%>
 
 ## Package 2 examples
+
+* Require gradient to be present and computable
+
 Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases steepest descent method.
 
 <img src="images/package2_functionPlot.png" width=40% height=40%>
@@ -47,6 +56,10 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 <img src="images/package2_contours.png" width=40% height=40%>
 
 ## Package 3 examples
+
+* Require gradient to be present and computable
+* Conjugate gradient methods can follow narrow (ill-conditioned) valleys, where the steepest descent method slows down and follows a criss-cross pattern
+
 Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases nonlinear conjugate gradient method with Hessian matrix.
 
 <img src="images/package3_functionPlot.png" width=40% height=40%>
@@ -57,6 +70,10 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 
 ## Package 4 examples
+
+* Requires Hessian to be present and computable
+* Newton's method can minimize any polynomial of Nth order in N-1 steps
+
 Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases modified Newton's method with step reduction.
 
 <img src="images/package4_functionPlot.png" width=40% height=40%>
@@ -67,6 +84,8 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 ## Package 5 examples
 
+* Quasi-Newton methods (except McCormick) keep most properties of a regular Newton's method without requiring Hessian computation
+
 Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases Powell method. 
 
 <img src="images/package5_functionPlot.png" width=40% height=40%>
@@ -76,6 +95,17 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 <img src="images/package5_contours.png" width=40% height=40%>
 
 ## Package 6 examples
+
+* Direct search methods do not require a gradient, thus can be used with non-continuous and non-differentiable functions.
+
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases cyclic coordinate descent.
+
+<img src="images/package6_functionPlot.png" width=40% height=40%>
+
+<img src="images/package6_residual.png" width=40% height=40%>
+
+<img src="images/package6_contours.png" width=40% height=40%>
+
 ## Package 7 examples
 ## Package 8 examples
 
@@ -90,6 +120,9 @@ To launch Mathematica packages one may need a valid Wolfram Mathematica license.
 
 ## Version History
 
+* 00.05
+    * Translated package 6, converted notebook to Mathematica package
+    * Improved method descriptions
 
 * 00.04
     * Translated package 5, converted notebook to Mathematica package

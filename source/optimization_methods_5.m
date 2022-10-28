@@ -212,7 +212,7 @@
 (*];*)
 (*];*)
 (**)
-(*(* Lach selected method *)*)
+(*(* Launch selected method *)*)
 (*If[method==1,MethodDFP];*)
 (*If[method==2,MethodBPGS];*)
 (*If[method==3,MethodPowell];*)
@@ -261,6 +261,3 @@
 (*Dynamic@Row@{"Zoom: ",zoom},*)
 (*Slider[Dynamic@zoom,{1,20,0.01}]*)
 (*}*)
-
-
-
