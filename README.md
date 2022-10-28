@@ -65,6 +65,9 @@ To launch Mathematica packages one may need a valid Wolfram Mathematica license.
 
 ## Version History
 
+* 00.02
+    * Translated package 3, converted notebook to Mathematica package
+
 * 00.01
     * Translated package 1, altered some plotting methods, converted notebook to Mathematica package
     * Translated package 2, altered some plotting methods, converted notebook to Mathematica package
