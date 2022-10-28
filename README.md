@@ -3,28 +3,28 @@
 Contains various minimization methods in 7 Wolfram Mathematica packages:
 
 * Package 1 (variations of 1-dimensional dichotomy)
-    1) Dichotomy method
-    2) Golden-section search
+    * Dichotomy method
+    * Golden-section search
 
 * Package 2 (variations of gradient descent)
-    1. Steepest descent
-    2. Gradient descent with geometric step reduction
+    * Steepest descent
+    * Gradient descent with geometric step reduction
 
 * Package 3 (variations of nonlinear conjugate gradient method)
-    1. Nonlinear conjugate gradient method
-    2. Fletcher-Reeves method
-    3. Polak-Ribière method
-    4. Nonlinear conjugate gradient method with Hessian matrix
+    * Nonlinear conjugate gradient method
+    * Fletcher-Reeves method
+    * Polak-Ribière method
+    * Nonlinear conjugate gradient method with Hessian matrix
 
 * Package 4 (variations of Newton's method)
-    1. Newton's method
-    2. Modified Newton's method with step reduction
+    * Newton's method
+    * Modified Newton's method with step reduction
 
 * Package 5 (Quasi-Newton methods)
-    1. Davidon-Fletcher-Powell method
-    2. Broyden-Fletcher-Goldfarb - Shanno method
-    3. Powell method
-    4. McCormick method
+    * Davidon-Fletcher-Powell method
+    * Broyden-Fletcher-Goldfarb - Shanno method
+    * Powell method
+    * McCormick method
 
 * Package 6
 * Package 7
