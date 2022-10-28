@@ -132,8 +132,6 @@ Minimization of a 2-argument function from a given initial point restricted to a
 
 <img src="images/package8_functionPlot.png" width=40% height=40%>
 
-<img src="images/package8_exterior_residual.png" width=40% height=40%>
-
 <img src="images/package8_exterior_contours1.png" width=40% height=40%>
 
 <img src="images/package8_exterior_contours2.png" width=40% height=40%>
@@ -141,8 +139,6 @@ Minimization of a 2-argument function from a given initial point restricted to a
 <img src="images/package8_exterior_penaltyPlot.png" width=40% height=40%>
 
 The same problem with interior barriers:
-
-<img src="images/package8_interior_residual.png" width=40% height=40%>
 
 <img src="images/package8_interior_contours1.png" width=40% height=40%>
 
