@@ -17,6 +17,9 @@ Contains various minimization methods in 7 Wolfram Mathematica packages:
     * Nonlinear conjugate gradient method with Hessian matrix
 
 * Package 4
+    * Newton' s method
+    * Modified Newton' s method with step reduction
+
 * Package 5
 * Package 6
 * Package 7
@@ -49,6 +52,14 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 
 ## Package 4 examples
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases modified Newton' s method with step reduction.
+
+<img src="images/package4_functionPlot.png" width=40% height=40%>
+
+<img src="images/package4_residual.png" width=40% height=40%>
+
+<img src="images/package4_contours.png" width=40% height=40%>
+
 ## Package 5 examples
 ## Package 6 examples
 ## Package 7 examples
@@ -64,6 +75,9 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 To launch Mathematica packages one may need a valid Wolfram Mathematica license. As an alternative packages can be converted to Jypiter notebooks and executed with Wolfram Lang.
 
 ## Version History
+
+* 00.03
+    * Translated package 4, converted notebook to Mathematica package
 
 * 00.02
     * Translated package 3, converted notebook to Mathematica package
