@@ -2,25 +2,30 @@
 
 Contains various minimization methods in 7 Wolfram Mathematica packages:
 
-* Package 1
-    * Dichotomy method
-    * Golden-section search
+* Package 1 (variations of 1-dimensional dichotomy)
+    1. Dichotomy method
+    2. Golden-section search
 
-* Package 2
-    * Steepest descent
-    * Gradient descent with geometric step reduction
+* Package 2 (variations of gradient descent)
+    1. Steepest descent
+    2. Gradient descent with geometric step reduction
 
-* Package 3
-    * Nonlinear conjugate gradient method
-    * Fletcher-Reeves method
-    * Polak-Ribière method
-    * Nonlinear conjugate gradient method with Hessian matrix
+* Package 3 (variations of nonlinear conjugate gradient method)
+    1. Nonlinear conjugate gradient method
+    2. Fletcher-Reeves method
+    3. Polak-Ribière method
+    4. Nonlinear conjugate gradient method with Hessian matrix
 
-* Package 4
-    * Newton' s method
-    * Modified Newton' s method with step reduction
+* Package 4 (variations of Newton's method)
+    1. Newton's method
+    2. Modified Newton's method with step reduction
 
-* Package 5
+* Package 5 (Quasi-Newton methods)
+    1. Davidon-Fletcher-Powell method
+    2. Broyden-Fletcher-Goldfarb - Shanno method
+    3. Powell method
+    4. McCormick method
+
 * Package 6
 * Package 7
 * Package 8
@@ -52,7 +57,7 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 
 
 ## Package 4 examples
-Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases modified Newton' s method with step reduction.
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases modified Newton's method with step reduction.
 
 <img src="images/package4_functionPlot.png" width=40% height=40%>
 
@@ -61,6 +66,15 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 <img src="images/package4_contours.png" width=40% height=40%>
 
 ## Package 5 examples
+
+Minimization of a 2-argument function from a given initial point. Rosenbrock function is used for testing, minization process can be dynamically tracked. All consequent plots support dynamics. Following example showcases Powell method. 
+
+<img src="images/package5_functionPlot.png" width=40% height=40%>
+
+<img src="images/package5_residual.png" width=40% height=40%>
+
+<img src="images/package5_contours.png" width=40% height=40%>
+
 ## Package 6 examples
 ## Package 7 examples
 ## Package 8 examples
@@ -75,6 +89,10 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 To launch Mathematica packages one may need a valid Wolfram Mathematica license. As an alternative packages can be converted to Jypiter notebooks and executed with Wolfram Lang.
 
 ## Version History
+
+
+* 00.04
+    * Translated package 5, converted notebook to Mathematica package
 
 * 00.03
     * Translated package 4, converted notebook to Mathematica package
