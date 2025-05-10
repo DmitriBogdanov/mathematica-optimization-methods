@@ -126,7 +126,7 @@ Minimization of a 2-argument function from a given initial point. Rosenbrock fun
 ## Package 8 (barrier methods) examples
 
 * Barrier methods use penalty functions to restrict minimization to a given region g(x, y) < 0
-* Through generally reliable, a large step enough can overshoot the barrier, which leads to a longer convergence
+* Through generally reliable, a large enough step can overshoot the barrier, which leads to a longer convergence
 
 Minimization of a 2-argument function from a given initial point restricted to a region. Rosenbrock function is used for testing. Following example showcases exterior barrier method.
 
@@ -152,7 +152,11 @@ Config parameters at the top of each package to select function, method, precisi
 
 ## Requirements
 
-To launch Mathematica packages one may need a valid Wolfram Mathematica license. As an alternative packages can be converted to Jypiter notebooks and executed with Wolfram Lang.
+To launch Mathematica packages one may need a valid Wolfram Mathematica license.
+
+Wolfram Engine can also be used for free to run packages without the Mathematica GUI.
+
+As an alternative packages can be converted to Jypiter notebooks and executed with Wolfram Lang. 
 
 ## Version History
 
