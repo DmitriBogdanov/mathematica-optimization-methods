@@ -1,44 +1,44 @@
 # Optimization methods collection
 
-Contains various minimization methods in 7 Wolfram Mathematica packages:
+Contains various minimization methods in 8 Wolfram Mathematica packages:
 
 * Package 1 (1-dimensional dichotomy)
-    * Dichotomy method
-    * Golden-section search
+  * Dichotomy method
+  * Golden-section search
 
 * Package 2 (gradient descent methods)
-    * Steepest descent
-    * Gradient descent with geometric step reduction
+  * Steepest descent
+  * Gradient descent with geometric step reduction
 
 * Package 3 (nonlinear conjugate gradient methods)
-    * Nonlinear conjugate gradient method
-    * Fletcher-Reeves method
-    * Polak-Ribière method
-    * Nonlinear conjugate gradient method with Hessian matrix
+  * Nonlinear conjugate gradient method
+  * Fletcher-Reeves method
+  * Polak-Ribière method
+  * Nonlinear conjugate gradient method with Hessian matrix
 
 * Package 4 (Newton's methods)
-    * Newton's method
-    * Modified Newton's method with step reduction
+  * Newton's method
+  * Modified Newton's method with step reduction
 
 * Package 5 (Quasi-Newton methods)
-    * Davidon-Fletcher-Powell method
-    * Broyden-Fletcher-Goldfarb - Shanno method
-    * Powell method
-    * McCormick method
+  * Davidon-Fletcher-Powell method
+  * Broyden-Fletcher-Goldfarb-Shanno method
+  * Powell method
+  * McCormick method
 
 * Package 6 (direct search methods)
-    * Cyclic coordinate descent
-    * Pattern search (Hooke - Jeeves method)
-    * Rosenbrock method
-    * Powell method
+  * Cyclic coordinate descent
+  * Pattern search (Hooke - Jeeves method)
+  * Rosenbrock method
+  * Powell method
 
 * Package 7 (simplex methods)
-    * Regular simplex method
-    * Downhill simplex method (Nelder\[Dash]Mead method)
+  * Regular simplex method
+  * Downhill simplex method (Nelder-Mead method)
 
 * Package 8 (barrier methods)
-    * Interior penalty function method
-    * Exterior penalty function method
+  * Interior penalty function method
+  * Exterior penalty function method
 
 ## Package 1 (1-dimensional dichotomy) examples
 
